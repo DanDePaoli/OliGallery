@@ -12,7 +12,8 @@
     "start": "nodemon server/index.js"
   },
   "dependencies": {
-    "node": "^15.2.0"
+    "node": "^15.2.0",
+    "react-icons": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
