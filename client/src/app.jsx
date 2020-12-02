@@ -4,7 +4,9 @@ import axios from 'axios';
 class App extends React.Component {
 constructor(props){
 super(props);
-this.state = {}
+this.state = {
+gallery: []
+}
 
 }
 
@@ -12,7 +14,7 @@ render () {
 
 
   return (
-<div>React is Rendering</div>
+<div className='newwork'>React is Rendering</div>
 
   );
 
