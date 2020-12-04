@@ -13,7 +13,7 @@ gallery: []
 
 }
 fileSelectedHandler = event => {
-  console.log("Clicked!")
+  console.log("Clicked!!")
 }
 
 render () {
@@ -24,7 +24,7 @@ render () {
 <div className='newwork'>
 <FaPencilAlt />
 <FaTrashAlt />
-<div className='plus'> <AiOutlinePlusCircle /></div>
+<div className='plus' onClick={this.fileSelectedHandler}> <AiOutlinePlusCircle /></div>
 
 
 </div>
