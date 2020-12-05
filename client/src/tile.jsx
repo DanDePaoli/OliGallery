@@ -71,20 +71,25 @@ class Tile extends React.Component {
 		}
 
 		return (
-			<div className="tile">
+			<div>
+				<div className="tile">
 
-					<FaPencilAlt className="icon-pencil"/>
-					<FaTrashAlt className="icon-trash"/>
+						<FaPencilAlt className="icon-pencil"/>
+						<FaTrashAlt className="icon-trash"/>
 
-				<img
-					onMouseEnter={this._mouseEnter}
-					onMouseLeave={this._mouseLeave}
-					onClick={this._clickHandler}
-					src={this.props.data.image}
-					alt={this.props.data.name}
-					style={tileStyle}
-				/>
+					<img
+						onMouseEnter={this._mouseEnter}
+						onMouseLeave={this._mouseLeave}
+						onClick={this._clickHandler}
+						src={this.props.data.image}
+						alt={this.props.data.name}
+						style={tileStyle}
+					/>
+
+				</div>
+				<div className="art-name">{this.props.data.name}</div>
 			</div>
+
 		);
   }
 }
