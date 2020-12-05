@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Tiles from './tiles.jsx';
-import { AiOutlinePlusCircle } from "react-icons/ai";
+import AddArt from './add-art.jsx';
+
 
 class App extends React.Component {
 constructor(props){
@@ -23,12 +24,8 @@ render () {
 
   return (
 <div>
-<Tiles data={this.state.art} />
-{/* <div className='tiles'><div className='tile'>
-<div className='newwork'>
-<div className='plus' onClick={this.fileSelectedHandler}> <AiOutlinePlusCircle /></div>
-</div></div>
-</div> */}
+<Tiles data={this.state.art} fileSelectedHandler = {this.fileSelectedHandler}/>
+
 
 </div>
   );
