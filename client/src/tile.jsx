@@ -73,8 +73,8 @@ class Tile extends React.Component {
 		return (
 			<div className="tile">
 
-					<FaPencilAlt className="icons"/>
-					<FaTrashAlt className="icons"/>
+					<FaPencilAlt className="icon-pencil"/>
+					<FaTrashAlt className="icon-trash"/>
 
 				<img
 					onMouseEnter={this._mouseEnter}
