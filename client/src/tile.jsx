@@ -65,7 +65,7 @@ class Tile extends React.Component {
 			};
 		} else {
 			tileStyle = {
-				width: '18vw',
+				width: '15vw',
 				height: '18vw'
 			};
 		}
@@ -73,10 +73,14 @@ class Tile extends React.Component {
 		return (
 			<div>
 				<div className="tile">
-
-						<FaPencilAlt className="icon-pencil"/>
-						<FaTrashAlt className="icon-trash"/>
-
+						<div className="icon-position">
+							<div className="icon-pencil">
+								<FaPencilAlt/>
+							</div>
+							<div className="icon-trash">
+								<FaTrashAlt/>
+							</div>
+						</div>
 					<img
 						onMouseEnter={this._mouseEnter}
 						onMouseLeave={this._mouseLeave}
