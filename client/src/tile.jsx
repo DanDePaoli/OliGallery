@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
 
 class Tile extends React.Component {
 	constructor(props) {
@@ -71,6 +72,10 @@ class Tile extends React.Component {
 
 		return (
 			<div className="tile">
+
+					<FaPencilAlt className="icons"/>
+					<FaTrashAlt className="icons"/>
+
 				<img
 					onMouseEnter={this._mouseEnter}
 					onMouseLeave={this._mouseLeave}
