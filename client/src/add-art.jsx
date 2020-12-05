@@ -2,10 +2,10 @@ import React from 'react';
 import { AiOutlinePlusCircle } from "react-icons/ai";
 
 var AddArt = (props) => (
-<div className='tiles'><div className='tile'>
+<div className='tile'>
 <div className='newwork'>
 <div className='plus' onClick={props.fileSelectedHandler}> <AiOutlinePlusCircle /></div>
-</div></div>
+</div>
 </div>
 )
 
